@@ -15,22 +15,6 @@
 		{
 			"xforms":
 			{
-				"BasicDisplayDevice1":
-				{
-					"parentId": "",
-					"location":
-					{
-						"x": 0,
-						"y": 0,
-						"z": 0
-					},
-					"rotation":
-					{
-						"pitch": 0,
-						"yaw": 0,
-						"roll": 0
-					}
-				}
 			},
 			"cameras":
 			{
@@ -44,7 +28,7 @@
 					{
 						"x": 0,
 						"y": 0,
-						"z": 0
+						"z": 50
 					},
 					"rotation":
 					{
@@ -56,7 +40,7 @@
 			},
 			"screens":
 			{
-				"nDisplayScreen":
+				"nDisplayScreen (Center)":
 				{
 					"size":
 					{
@@ -66,9 +50,9 @@
 					"parentId": "",
 					"location":
 					{
-						"x": 170,
+						"x": 960,
 						"y": 0,
-						"z": 160
+						"z": 50
 					},
 					"rotation":
 					{
@@ -143,11 +127,11 @@
 					},
 					"viewports":
 					{
-						"VP_0":
+						"VP_Center":
 						{
 							"camera": "",
 							"bufferRatio": 1,
-							"gPUIndex": 0,
+							"gPUIndex": -1,
 							"allowCrossGPUTransfer": false,
 							"isShared": false,
 							"overscan":
@@ -169,10 +153,13 @@
 							},
 							"projectionPolicy":
 							{
-								"type": "simple",
+								"type": "Mesh",
 								"parameters":
 								{
-									"screen": "nDisplayScreen"
+									"section_index": "0.0",
+									"base_uv_index": "-1.0",
+									"chromakey_uv_index": "-1.0",
+									"mesh_component": "nDisplayScreen (Center)"
 								}
 							}
 						}
